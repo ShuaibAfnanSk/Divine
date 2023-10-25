@@ -21,7 +21,7 @@ const Cosmo = () => {
     const [swiper, setSwiper] = useState(0);
 
     useEffect(() => {
-        axios.get("http://localhost:3001/server/properties/cosmo")
+        axios.get("http://divine-phi.vercel.app/server/properties/cosmo")
             .then(result => setCosmo(result.data))
             .catch(err => console.log(err))
     }, [])

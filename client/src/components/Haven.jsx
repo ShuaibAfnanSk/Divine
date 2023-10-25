@@ -33,7 +33,7 @@ const Haven = () => {
     const [swiper, setSwiper] = useState(0);
 
     useEffect(() => {
-        axios.get("http://localhost:3001/server/properties/haven")
+        axios.get("http://divine-phi.vercel.app/server/properties/haven")
             .then(result => setHaven(result.data))
             .catch(err => console.log(err))
     }, [])

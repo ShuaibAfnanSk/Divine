@@ -38,7 +38,7 @@ const SingleSellProperty = () => {
     const [phone, setPhone] = useState();
 
     useEffect(() => {
-        axios.get("http://localhost:3001/server/sellProperties/" + path)
+        axios.get("http://divine-phi.vercel.app/server/sellProperties/" + path)
             .then((result) => {
                 setName(result.data.name)
                 setPhone(result.data.phone)
@@ -82,7 +82,7 @@ const SingleSellProperty = () => {
                 </div>
                 <div className="spTxtBxAlt">
                     <div className="spTableAlt">
-                        <div className="table" style={{borderRadius:"8px"}}>
+                        <div className="table" style={{ borderRadius: "8px" }}>
                             <h5 style={{ fontSize: "1.5em", textTransform: "uppercase", fontFamily: "pacifico", marginBottom: "2em" }}>Property Details</h5>
                             <div className="row">
                                 <span>Name</span>
@@ -153,7 +153,7 @@ const SingleSellProperty = () => {
                                 <span>${price}</span>
                             </div>
                         </div>
-                        <div className="table tableAlt" style={{borderRadius:"8px"}}>
+                        <div className="table tableAlt" style={{ borderRadius: "8px" }}>
                             <h5 style={{ fontSize: "1.5em", textTransform: "uppercase", fontFamily: "pacifico", marginBottom: "2em" }}>Seller Details</h5>
                             <div className="row">
                                 <span>Name</span>

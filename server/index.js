@@ -7,7 +7,13 @@ const visitRoute = require("./routes/visitRoute");
 const sellPropertyRoute = require("./routes/sellPropertyRoute");
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+    origin: ["https://divine-client.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://shuaibafnansk:Shuaib11@cluster0.k5qlbv2.mongodb.net/divine?retryWrites=true&w=majority", {

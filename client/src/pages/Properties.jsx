@@ -20,7 +20,7 @@ const Properties = () => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:3001/server/properties/")
+        axios.get("http://divine-phi.vercel.app/server/properties/")
             .then(result => setProperties(result.data))
             .catch(err => console.log(err))
     }, [])

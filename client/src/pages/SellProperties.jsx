@@ -20,7 +20,7 @@ const SellProperties = () => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:3001/server/sellProperties/")
+        axios.get("http://divine-phi.vercel.app/server/sellProperties/")
             .then(result => setProperties(result.data))
             .catch(err => console.log(err))
     }, [])

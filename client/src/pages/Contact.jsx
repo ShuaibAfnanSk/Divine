@@ -7,10 +7,11 @@ const Contact = () => {
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
+    axios.defaults.withCredentials = true;
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:3001/server/messages/send/", {name,email,message})
+        axios.post("http://divine-phi.vercel.app/server/messages/send/", {name,email,message})
             .then(result => {
                 console.log(result)
                 window.location.reload()

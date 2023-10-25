@@ -29,7 +29,7 @@ const Sell = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:3001/server/sellProperties/sell/", {
+        axios.post("http://divine-phi.vercel.app/server/sellProperties/sell/", {
             name,
             price,
             image,
