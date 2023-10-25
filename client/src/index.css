@@ -1199,6 +1199,51 @@ textarea {
   font-weight: 500;
 }
 
+.errorWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.errorBx {
+  background-image: url(./assets/luffy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+  padding: 0em 5em;
+}
+
+.errorBx h2 {
+  font-size: 8em;
+  font-weight: 100;
+}
+
+.errorBx div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.errorBx div p {
+  font-size: 1.25em;
+}
+
+.errorBx div button {
+  background: #fff;
+  padding: 1em 2em;
+  font-size: 1.25em;
+  border-radius: 3em;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
 /* -----------------------------------------------------------------------media queries----------------------------------------------------------------- */
 
 @media only screen and (max-width:1285px) {
@@ -1255,7 +1300,7 @@ textarea {
   .contactBx {
     gap: 2em;
   }
-  
+
 }
 
 @media only screen and (max-width:1000px) {
@@ -1337,7 +1382,7 @@ textarea {
   .aboutStamp span:nth-child(1) {
     font-size: 2em;
   }
-  
+
   .aboutStamp span:nth-child(2) {
     font-size: 1em;
   }
@@ -1450,6 +1495,17 @@ textarea {
 
   .serviceWrapper {
     padding: 3em 0em;
+  }
+
+  .errorBx {
+    padding: 0em 2em;
+  }
+
+  .errorBx div {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    gap: 2em;
   }
 
 }
@@ -1570,7 +1626,7 @@ textarea {
   .table {
     padding: 1em;
   }
-  
+
   .row span {
     font-size: .9em
   }

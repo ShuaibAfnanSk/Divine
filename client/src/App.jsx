@@ -11,6 +11,7 @@ import Visit from './pages/Visit';
 import Sell from './pages/Sell';
 import SellProperties from './pages/SellProperties';
 import SingleSellProperty from './pages/SingleSellProperty';
+import Error from './pages/Error';
 
 function ScrollToTopOnMount() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
         <Route path="/sell" element={<Sell />} />
         <Route path="/visit/:id" element={<Visit />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   )
