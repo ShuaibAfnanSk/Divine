@@ -38,6 +38,7 @@ const Visit = () => {
         axios.post("https://divine-phi.vercel.app/server/visits/send/", { fullName, email, phone, date, name, city, state })
             .then(result => {
                 console.log(result)
+                alert("your visit request has been received")
                 window.location.replace('/')
             })
             .catch(err => console.log(err))

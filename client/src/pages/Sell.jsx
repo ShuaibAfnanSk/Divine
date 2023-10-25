@@ -54,6 +54,7 @@ const Sell = () => {
         })
             .then(result => {
                 console.log(result)
+                alert("the new property is now addded to seller properties..")
                 window.location.reload()
             })
             .catch(err => console.log(err))

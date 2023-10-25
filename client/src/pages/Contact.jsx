@@ -14,6 +14,7 @@ const Contact = () => {
         axios.post("https://divine-phi.vercel.app/server/messages/send/", {name,email,message})
             .then(result => {
                 console.log(result)
+                alert("Thanks for your valuable feedback, your message has been delivered..")
                 window.location.reload()
             })
             .catch(err => console.log(err))
