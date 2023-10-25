@@ -11,7 +11,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://divine-phi.vercel.app/server/messages/send/", {name,email,message})
+        axios.post("https://divine-phi.vercel.app/server/messages/send/", {name,email,message})
             .then(result => {
                 console.log(result)
                 window.location.reload()

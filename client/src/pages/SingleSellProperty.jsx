@@ -38,7 +38,7 @@ const SingleSellProperty = () => {
     const [phone, setPhone] = useState();
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get("http://divine-phi.vercel.app/server/sellProperties/" + path)
+        axios.get("https://divine-phi.vercel.app/server/sellProperties/" + path)
             .then((result) => {
                 setName(result.data.name)
                 setPhone(result.data.phone)

@@ -21,7 +21,7 @@ const Properties = () => {
     axios.defaults.withCredentials = true;
 
     useEffect(() => {
-        axios.get("http://divine-phi.vercel.app/server/properties/")
+        axios.get("https://divine-phi.vercel.app/server/properties/")
             .then(result => setProperties(result.data))
             .catch(err => console.log(err))
     }, [])

@@ -23,7 +23,7 @@ const Visit = () => {
     const [image, setImage] = useState();
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get("http://divine-phi.vercel.app/server/properties/" + path)
+        axios.get("https://divine-phi.vercel.app/server/properties/" + path)
             .then((result) => {
                 setName(result.data.name)
                 setCity(result.data.city)
@@ -35,7 +35,7 @@ const Visit = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://divine-phi.vercel.app/server/visits/send/", { fullName, email, phone, date, name, city, state })
+        axios.post("https://divine-phi.vercel.app/server/visits/send/", { fullName, email, phone, date, name, city, state })
             .then(result => {
                 console.log(result)
                 window.location.replace('/')

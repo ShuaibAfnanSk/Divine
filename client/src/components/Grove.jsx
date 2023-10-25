@@ -25,7 +25,7 @@ const Grove = () => {
     const [slider, setSlider] = useState(0);
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get("http://divine-phi.vercel.app/server/properties/grove")
+        axios.get("https://divine-phi.vercel.app/server/properties/grove")
             .then(result => setGrove(result.data))
             .catch(err => console.log(err))
     }, [])
