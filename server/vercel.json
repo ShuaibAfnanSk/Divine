@@ -1,15 +1,16 @@
 {
     "version": 2,
+    "name": "divine-alchemy",
     "builds": [
         {
-            "src": "*.js",
+            "src": "index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/"
+            "dest": "/index.js"
         }
     ]
 }
