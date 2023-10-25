@@ -18,6 +18,7 @@ const Properties = () => {
     const handleShowAll = () => {
         setFilterCat(null)
     }
+    axios.defaults.withCredentials = true;
 
     useEffect(() => {
         axios.get("http://divine-phi.vercel.app/server/properties/")

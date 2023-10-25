@@ -18,7 +18,7 @@ const SellProperties = () => {
     const handleShowAll = () => {
         setFilterCat(null)
     }
-
+    axios.defaults.withCredentials = true;
     useEffect(() => {
         axios.get("http://divine-phi.vercel.app/server/sellProperties/")
             .then(result => setProperties(result.data))

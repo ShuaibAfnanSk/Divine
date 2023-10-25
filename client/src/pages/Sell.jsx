@@ -26,7 +26,7 @@ const Sell = () => {
     const [yr_built, setBuilt] = useState();
     const [yr_renovated, setRenovate] = useState();
     // const [random, setRandom] = useState(null);
-
+    axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
         axios.post("http://divine-phi.vercel.app/server/sellProperties/sell/", {

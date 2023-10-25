@@ -41,7 +41,7 @@ const SingleProperty = () => {
     const [state, setState] = useState();
     const [neighbors, setNeighbors] = useState([]);
     const [image, setImage] = useState();
-
+    axios.defaults.withCredentials = true;
     useEffect(() => {
         axios.get("http://divine-phi.vercel.app/server/properties/" + path)
             .then((result) => {
