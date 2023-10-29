@@ -31,7 +31,7 @@ const Sell = () => {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("https://divine-phi.vercel.app/server/sellProperties/sell/", {
+        axios.post("https://divine-pi.vercel.app/server/sellProperties/sell/", {
             name,
             price,
             image,

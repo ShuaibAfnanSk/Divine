@@ -14,7 +14,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("https://divine-phi.vercel.app/server/messages/send/", {name,email,message})
+        axios.post("https://divine-pi.vercel.app/server/messages/send/", {name,email,message})
             .then(result => {
                 console.log(result)
                 alert("Thanks for your valuable feedback, your message has been delivered..")

@@ -26,7 +26,7 @@ const Visit = () => {
     axios.defaults.withCredentials = true;
     
     useEffect(() => {
-        axios.get("https://divine-phi.vercel.app/server/properties/" + path)
+        axios.get("https://divine-pi.vercel.app/server/properties/" + path)
             .then((result) => {
                 setName(result.data.name)
                 setCity(result.data.city)
@@ -38,7 +38,7 @@ const Visit = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("https://divine-phi.vercel.app/server/visits/send/", { fullName, email, phone, date, name, city, state })
+        axios.post("https://divine-pi.vercel.app/server/visits/send/", { fullName, email, phone, date, name, city, state })
             .then(result => {
                 console.log(result)
                 alert("your visit request has been received")

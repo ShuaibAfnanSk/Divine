@@ -43,7 +43,7 @@ const SingleProperty = () => {
     const [image, setImage] = useState();
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get("https://divine-phi.vercel.app/server/properties/" + path)
+        axios.get("https://divine-pi.vercel.app/server/properties/" + path)
             .then((result) => {
                 setName(result.data.name)
                 setNeighbors(result.data.neighbors)

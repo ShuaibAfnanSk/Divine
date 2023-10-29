@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://divine-alchemy.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
