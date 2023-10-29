@@ -50,7 +50,7 @@ const Signup = () => {
                     </div>
 
                     {password !== passwordAlt ? (<span>passwords do not match</span>) : (null)}
-                    {error && <span>{error}</span>}
+                    {/* {error && <span>{error}</span>} */}
 
                     <button className="button" type="submit">signup</button>
                     <span>Already have an account? <Link to={"/login"} className="link">login</Link></span>
