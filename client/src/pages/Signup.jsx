@@ -14,7 +14,7 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("https://divine-phi.vercel.app/server/authentication/signup/", { username, email, password })
+        axios.post("https://divine-phi.vercel.app/server/sellers/signup/", { username, email, password })
             .then(result => {
                 console.log(result)
                 window.location.replace("/login")

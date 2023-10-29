@@ -30,7 +30,7 @@ app.use("/server/properties", propertyRoute);
 app.use("/server/messages", messageRoute);
 app.use("/server/visits", visitRoute);
 app.use("/server/sellProperties", sellPropertyRoute);
-app.use("/server/authentication", userRoute);
+app.use("/server/sellers", userRoute);
 
 app.listen(3001, () => {
     console.log("local host is running")
