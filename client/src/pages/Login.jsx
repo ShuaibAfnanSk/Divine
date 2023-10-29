@@ -24,6 +24,7 @@ const Login = () => {
                 const user = result.data.user;
                 dispatch({ type: "LOGIN_SUCCESS", payload: user });
                 window.location.replace('/');
+                alert(`Welcome to Divine Alchemy ${user.username}`)
             })
             .catch(err => {
                 setError(err.response?.data?.error || 'An unexpected error occurred');
