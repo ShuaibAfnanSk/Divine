@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import React from 'react';
 import './index.css';
 import { BrowserRouter as Router, Route, Routes, useLocation, Link } from "react-router-dom";
@@ -12,6 +12,9 @@ import Sell from './pages/Sell';
 import SellProperties from './pages/SellProperties';
 import SingleSellProperty from './pages/SingleSellProperty';
 import Error from './pages/Error';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import { Context } from './context/Context';
 
 function ScrollToTopOnMount() {
   const location = useLocation();
@@ -23,6 +26,8 @@ function ScrollToTopOnMount() {
 
 function App() {
 
+  const { user } = useContext(Context);
+
   return (
     <Router>
       <ScrollToTopOnMount />
@@ -33,9 +38,11 @@ function App() {
         <Route path="/property/:propertyName" element={<SingleProperty />} />
         <Route path="/sellProperty/:propertyName" element={<SingleSellProperty />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/sell" element={<Sell />} />
-        <Route path="/visit/:id" element={<Visit />} />
+        <Route path="/sell" element={user ? <Sell /> : <Login />} />
+        <Route path="/visit/:id" element={user ? <Visit /> : <Login />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

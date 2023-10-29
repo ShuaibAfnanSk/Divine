@@ -1,6 +1,7 @@
 import axios from "axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Header from "../components/Header";
+import { Context } from "../context/Context";
 
 const Sell = () => {
 
@@ -25,6 +26,7 @@ const Sell = () => {
     const [sqft_above, setAbove] = useState();
     const [yr_built, setBuilt] = useState();
     const [yr_renovated, setRenovate] = useState();
+    const {user} = useContext(Context);
     // const [random, setRandom] = useState(null);
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
@@ -110,7 +112,7 @@ const Sell = () => {
                             </div>
                             <div>
                                 <label htmlFor="seller">Seller_name</label>
-                                <input type="text" name="seller" id="" placeholder="" onChange={(e) => setSellerName(e.target.value)} />
+                                <input type="text" name="seller" id="" placeholder={user ? user.username : "john doe"} onChange={(e) => setSellerName(e.target.value)} />
                             </div>
                         </div>
 

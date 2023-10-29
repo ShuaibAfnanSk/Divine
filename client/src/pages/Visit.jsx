@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState} from "react";
 import styled from "styled-components";
 import Header from "../components/Header";
+import { Context } from "../context/Context";
 
 const VisitImg = styled.div`
     background-image: url(${props => props.img});
@@ -13,6 +14,7 @@ const VisitImg = styled.div`
 const Visit = () => {
 
     const path = location.pathname.split('/')[2];
+    const {user} = useContext(Context);
     const [fullName, setFullName] = useState();
     const [name, setName] = useState();
     const [city, setCity] = useState();
@@ -22,6 +24,7 @@ const Visit = () => {
     const [date, setDate] = useState();
     const [image, setImage] = useState();
     axios.defaults.withCredentials = true;
+    
     useEffect(() => {
         axios.get("https://divine-phi.vercel.app/server/properties/" + path)
             .then((result) => {
@@ -55,9 +58,9 @@ const Visit = () => {
                 <div className="contactRight">
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="name">Full Name</label>
-                        <input type="text" name="fullName" placeholder="john doe" onChange={(e) => setFullName(e.target.value)} />
+                        <input type="text" name="fullName" placeholder={user ? user.username : "john doe"} onChange={(e) => setFullName(e.target.value)} />
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" id="" placeholder="john.doe@email.com" onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" name="email" id="" placeholder="example@email.com" onChange={(e) => setEmail(e.target.value)} />
                         <label htmlFor="email">Phone</label>
                         <input type="text" name="phone" id="" placeholder="+49 176 123 456 79" onChange={(e) => setPhone(e.target.value)} />
                         <label htmlFor="email">Date</label>
