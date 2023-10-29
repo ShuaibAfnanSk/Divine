@@ -9,11 +9,15 @@ const userRoute = require("./routes/userRoute");
 
 const app = express();
 
-app.use(cors({
-    origin: ["https://divine-client.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-}));
+app.use(cors(
+    {
+        origin: [""],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
+
+
 
 app.use(express.json());
 
@@ -26,7 +30,7 @@ mongoose.connect("mongodb+srv://shuaibafnansk:Shuaib11@cluster0.k5qlbv2.mongodb.
         console.log(err)
     });
 
-    
+
 app.use("/server/sellers", userRoute);
 app.use("/server/properties", propertyRoute);
 app.use("/server/messages", messageRoute);
