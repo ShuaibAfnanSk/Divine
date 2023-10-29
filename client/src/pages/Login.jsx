@@ -10,13 +10,13 @@ const Login = () => {
     const [password, setPassword] = useState();
     const [error, setError] = useState();
     const { dispatch, isFetching } = useContext(Context);
-    axios.defaults.withCredentials = true;
 
+    axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch({ type: "LOGIN_START" });
 
-        axios.post("https://divine-phi.vercel.app/server/auth/login", {
+        axios.post("https://divine-phi.vercel.app/server/authentication/login/", {
             username,
             password,
         })
