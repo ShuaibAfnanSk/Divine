@@ -1551,7 +1551,7 @@ textarea {
     background: none;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    gap: 1em;
   }
 
   .headerNavs span:hover {
@@ -1681,9 +1681,9 @@ textarea {
     font-size: 5em;
   }
 
-  .header {
-    top: 5%;
-    left: 3%;
+  .headerDiv {
+    top: 4%;
+    left: 2%;
   }
 
   body {
@@ -1829,6 +1829,7 @@ textarea {
 }
 
 @media only screen and (max-width:450px) {
+
   .authForm {
     width: 350px;
     padding: 3em 1em;
