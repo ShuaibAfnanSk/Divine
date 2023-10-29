@@ -18,7 +18,7 @@ const Login = () => {
 
         axios.post("https://divine-phi.vercel.app/server/sellers/login/", {
             username,
-            password,
+            password
         })
             .then(result => {
                 const user = result.data.user;

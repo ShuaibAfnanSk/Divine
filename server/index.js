@@ -26,11 +26,12 @@ mongoose.connect("mongodb+srv://shuaibafnansk:Shuaib11@cluster0.k5qlbv2.mongodb.
         console.log(err)
     });
 
+    
+app.use("/server/sellers", userRoute);
 app.use("/server/properties", propertyRoute);
 app.use("/server/messages", messageRoute);
 app.use("/server/visits", visitRoute);
 app.use("/server/sellProperties", sellPropertyRoute);
-app.use("/server/sellers", userRoute);
 
 app.listen(3001, () => {
     console.log("local host is running")
