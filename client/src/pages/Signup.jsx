@@ -9,7 +9,7 @@ const Signup = () => {
     const [password, setPassword] = useState();
     const [email, setEmail] = useState();
     const [passwordAlt, setPasswordAlt] = useState();
-    const [error, setError] = useState();
+    // const [error, setError] = useState();
     axios.defaults.withCredentials = true;
 
     const handleSubmit = (e) => {
@@ -21,7 +21,7 @@ const Signup = () => {
             })
             .catch(err => {
                 console.log(err)
-                setError(err.response?.data?.error || 'An unexpected error occurred');
+                // setError(err.response?.data?.error || 'An unexpected error occurred');
             })
     }
 
