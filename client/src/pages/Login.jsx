@@ -16,7 +16,7 @@ const Login = () => {
         e.preventDefault();
         dispatch({ type: "LOGIN_START" });
 
-        axios.post("https://divine-phi.vercel.app/server/auth/login/", {
+        axios.post("https://divine-phi.vercel.app/server/auth/login", {
             username,
             password,
         })
