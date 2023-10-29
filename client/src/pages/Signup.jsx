@@ -10,11 +10,11 @@ const Signup = () => {
     const [email, setEmail] = useState();
     const [passwordAlt, setPasswordAlt] = useState();
     const [error, setError] = useState();
-
     axios.defaults.withCredentials = true;
+
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("https://divine-phi.vercel.app/auth/signup", { username, email, password })
+        axios.post("https://divine-phi.vercel.app/auth/signup/", { username, email, password })
             .then(result => {
                 console.log(result)
                 window.location.replace("/login")
