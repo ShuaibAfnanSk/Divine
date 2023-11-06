@@ -51,7 +51,7 @@ const Haven = () => {
     return (
         <div className="haven border">
             <div className="title">
-                <h6>Sunset Haven</h6>
+                <h6>Cluster Two</h6>
                 <h3>Elite, Class & Luxe Home</h3>
             </div>
             <div className="swiperWrapper">

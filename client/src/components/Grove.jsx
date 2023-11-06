@@ -43,7 +43,7 @@ const Grove = () => {
     return (
         <div className="grove border">
             <div className="title">
-                <h6>Tranquil Grove</h6>
+                <h6>Cluster One</h6>
                 <h3>Dive-In Oasis Retreat</h3>
             </div>
             <div className="sliderWrapper">

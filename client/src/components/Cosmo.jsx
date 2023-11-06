@@ -37,7 +37,7 @@ const Cosmo = () => {
     return (
         <div className="cosmo border">
             <div className="title">
-                <h6>Cosmo Lofts</h6>
+                <h6>Cluster Three</h6>
                 <h3>Breathtaking Panoramic View's</h3>
             </div>
             <div className="cosmoSwiperWrapper">
