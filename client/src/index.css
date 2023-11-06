@@ -1194,6 +1194,7 @@ textarea {
   gap: 1em;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 
 .swipebtn {
