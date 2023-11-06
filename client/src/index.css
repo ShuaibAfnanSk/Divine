@@ -1124,13 +1124,13 @@ textarea {
   display: flex;
   flex-direction: column;
   padding: 5em 5em 10em 5em;
-  gap: 5em;
+  gap: 3em;
   overflow: hidden;
 }
 
 .swiperWrapper {
   display: flex;
-  gap: 2em;
+  gap: 3em;
   flex-direction: column;
 }
 
