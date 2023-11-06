@@ -1192,12 +1192,14 @@ textarea {
 .swipebtns {
   display: flex;
   gap: 1em;
+  align-items: center;
+  width: 100%;
 }
 
 .swipebtn {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
