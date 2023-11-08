@@ -765,7 +765,7 @@ textarea {
 /* -------------------------------------------------------------------------home--------------------------------------------------------------- */
 
 .hero {
-  background-image: url("https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1955&q=80");
+  background-image: url("https://images.unsplash.com/photo-1478186172078-2a70949993f0?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -805,7 +805,7 @@ textarea {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: 5em 3em;
+  padding: 5em 3em 3em 3em;
   transform: translateY(-75px);
   width: 100%;
   gap: 5em;
@@ -847,81 +847,13 @@ textarea {
   transition: .5s ease;
 }
 
-/* ---------------------------------------------------------------about--------------------------------------------------------------- */
-
-.about {
-  background-color: #fff1e6;
-  padding: 5em 5em 3em 5em;
-  width: 100%;
-  display: flex;
-}
-
-.aboutBx {
-  flex: 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.aboutTxt {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
-.aboutTxt h5 {
-  font-size: 3em;
-  font-weight: 500;
-}
-
-.aboutTxt p {
-  font-size: 1.5em;
-}
-
-.aboutStamps {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 3em;
-}
-
-.aboutStamp {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  width: 40%;
-  margin-bottom: 2em;
-}
-
-.aboutStamp span:nth-child(1) {
-  font-size: 4em;
-}
-
-.aboutStamp span:nth-child(2) {
-  font-size: 1.25em;
-}
-
-.aboutImg {
-  display: flex;
-  flex: 6;
-  align-items: end;
-  justify-content: end;
-}
-
-.aboutImg img {
-  width: 600px;
-  object-fit: cover;
-  height: 100vh;
-  border-top-right-radius: 2em;
-  border-top-left-radius: 2em;
-}
 
 /* ------------------------------------------------------------------------service------------------------------------------------------------- */
 
 .serviceWrapper {
   background-color: #fff;
   width: 100%;
-  transform: translateY(-75px);
-  padding: 5em 5em 3em 5em;
+  padding: 5em;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -962,10 +894,11 @@ textarea {
   display: flex;
   flex-direction: column;
   padding: 2em;
-  background-color: #fff1e6;
+  background-color: #000;
+  color: #fff;
   gap: 1em;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .service:nth-child(1) {
@@ -1000,6 +933,55 @@ textarea {
 
 .serviceTxt p {
   width: 85%;
+}
+
+/* -----------------------------------------------------------------------about---------------------------------------------------------------------- */
+
+.aboutWrapper {
+  padding: 3em 0em 7em 0em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.about {
+  background-image: url("https://images.unsplash.com/photo-1486108334972-f02b6c78ba07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 3em;
+  align-items: end;
+}
+
+.aboutAlt {
+  background-image: url("https://images.unsplash.com/photo-1423768164017-3f27c066407f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.aboutBx {
+  background-color: #fff;
+  width: 600px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 1em;
+}
+
+.aboutBx h3 {
+  font-size: 2em;
+  font-family: "pacifico";
+}
+
+.subscribe {
+  width: 100%;
+  font-size: 1.2em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 1em;
+  border-radius: 5px;
 }
 
 /* -------------------------------------------------------------------shop--------------------------------------------------------------------- */
@@ -1334,20 +1316,118 @@ textarea {
   display: none;
 }
 
+.fancy {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: black;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: black;
+}
+
+.fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
 /* -----------------------------------------------------------------------media queries----------------------------------------------------------------- */
 
 @media only screen and (max-width:1285px) {
 
   .swiperWrapper {
     flex-wrap: wrap;
-  }
-
-  .aboutImg img {
-    width: 500px;
-  }
-
-  .about {
-    padding: 5em 2em;
   }
 
 }
@@ -1461,22 +1541,6 @@ textarea {
     font-size: 2em;
   }
 
-  .aboutTxt h5 {
-    font-size: 2em;
-  }
-
-  .aboutTxt p {
-    font-size: 1.25em;
-  }
-
-  .aboutStamp span:nth-child(1) {
-    font-size: 2em;
-  }
-
-  .aboutStamp span:nth-child(2) {
-    font-size: 1em;
-  }
-
   .contactBx {
     flex-direction: column;
     align-items: start;
@@ -1501,10 +1565,6 @@ textarea {
 
   .title h3 {
     font-size: 2.5em;
-  }
-
-  .aboutImg img {
-    width: 400px;
   }
 
   .menu {
@@ -1633,14 +1693,6 @@ textarea {
     padding: 3em 1em;
   }
 
-  .aboutImg {
-    display: none;
-  }
-
-  .aboutBx {
-    gap: 3em;
-  }
-
   .serviceWrapper {
     padding: 3em 0em;
   }
@@ -1670,6 +1722,15 @@ textarea {
 
   .formWrapper {
     padding: 0em;
+  }
+
+  .about {
+    padding: 3em 1em;
+  }
+
+  .aboutBx {
+    width: 450px;
+    padding: 2em 1em;
   }
 
 }
