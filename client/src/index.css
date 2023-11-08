@@ -314,7 +314,7 @@ textarea:focus {
 .spHero {
   width: 100%;
   height: 150vh;
-  padding: 3em;
+  padding: 3em 5em;
   position: relative;
   overflow: hidden;
 }
@@ -360,7 +360,7 @@ textarea:focus {
 .spContentAlt {
   background-color: #fff;
   display: flex;
-  padding: 5em 3em;
+  padding: 5em;
   transform: translateY(-75px);
   position: relative;
   gap: 1em;
