@@ -6,6 +6,7 @@ const messageRoute = require("./routes/messageRoute");
 const visitRoute = require("./routes/visitRoute");
 const sellPropertyRoute = require("./routes/sellPropertyRoute");
 const userRoute = require("./routes/userRoute");
+const newsRoute = require("./routes/newsletterRoute");
 
 const app = express();
 
@@ -16,8 +17,6 @@ app.use(cors(
         credentials: true
     }
 ));
-
-
 
 app.use(express.json());
 
@@ -36,6 +35,7 @@ app.use("/server/properties", propertyRoute);
 app.use("/server/messages", messageRoute);
 app.use("/server/visits", visitRoute);
 app.use("/server/sellProperties", sellPropertyRoute);
+app.use("/server/newsletter", newsRoute)
 
 app.listen(3001, () => {
     console.log("local host is running")

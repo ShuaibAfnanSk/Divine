@@ -1,9 +1,24 @@
+import axios from "axios";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import polaroids from "../json/polaroids";
 import service from "../json/service";
+import { useState } from "react";
 
 const Home = () => {
+
+    const [email, setEmail] = useState();
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post("https://divine-pi.vercel.app/server/newsletter/request/", { email })
+            .then(result => {
+                console.log(result)
+                alert("Thanks for subscribing our newsletter..")
+                window.location.reload()
+            })
+            .catch(err => console.log(err))
+    }
 
     return (
         <section className="wrapper">
@@ -60,16 +75,16 @@ const Home = () => {
                     <p>Subscribe to stay updated.</p>
                 </div>
                 <div className="about aboutAlt">
-                    <div className="aboutBx">
+                    <form className="aboutBx" onSubmit={handleSubmit}>
                         <h3>Newsletter</h3>
-                        <input type="email" className="subscribe" placeholder="john.doe@email.com" />
-                        <a class="fancy" href="#">
+                        <input type="email" className="subscribe" onChange={(e) => setEmail(e.target.value)} required placeholder="john.doe@email.com" />
+                        <button type="submit" class="fancy">
                             <span class="top-key"></span>
                             <span class="text">Subscribe</span>
                             <span class="bottom-key-1"></span>
                             <span class="bottom-key-2"></span>
-                        </a>
-                    </div>
+                        </button>
+                    </form>
                 </div>
             </div>
 
