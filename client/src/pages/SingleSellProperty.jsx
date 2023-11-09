@@ -67,114 +67,116 @@ const SingleSellProperty = () => {
 
 
     return (
-        <div className="spContainer">
-            <Hero className="spHero border" img={image}>
-                <Header />
-                <div className="spTitle">
-                    <h6>{city}</h6>
-                    <h2>{name}</h2>
-                    <p>A Property Located in {city}, {state} in USA</p>
-                </div>
-            </Hero>
-            <div className="spContentAlt border">
-                <div className="spImgBx">
-                    <img src={image} alt="" />
-                </div>
-                <div className="spTxtBxAlt">
-                    <div className="spTableAlt">
-                        <div className="table" style={{ borderRadius: "8px" }}>
-                            <h5 style={{ fontSize: "1.5em", textTransform: "uppercase", fontFamily: "pacifico", marginBottom: "2em" }}>Property Details</h5>
-                            <div className="row">
-                                <span>Name</span>
-                                <span>{name}</span>
-                            </div>
-                            <div className="row">
-                                <span>City</span>
-                                <span>{city}</span>
-                            </div>
-                            <div className="row">
-                                <span>statezip</span>
-                                <span>{state}</span>
-                            </div>
-                            <div className="row">
-                                <span>floors</span>
-                                <span>{floor}</span>
-                            </div>
-                            <div className="row">
-                                <span>bedrooms</span>
-                                <span>{bedroom}</span>
-                            </div>
-                            <div className="row">
-                                <span>bathrooms</span>
-                                <span>{bathroom}</span>
-                            </div>
-                            <div className="row">
-                                <span>View</span>
-                                <span style={{ display: "flex", alignItems: "center", gap: ".5em" }}>{view} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M229.5,113,166.07,90,143,26.5a16,16,0,0,0-30,0L90,89.93,26.5,113a16,16,0,0,0,0,30l63.43,23L113,229.5a16,16,0,0,0,30,0l23.07-63.44L229.5,143a16,16,0,0,0,0-30Zm-68.93,38a16,16,0,0,0-9.54,9.54L128,223.9l-23-63.33A16,16,0,0,0,95.43,151L32.1,128l63.33-23A16,16,0,0,0,105,95.43L128,32.1l23,63.33a16,16,0,0,0,9.54,9.54l63.33,23Z"></path></svg></span>
-                            </div>
-                            <div className="row">
-                                <span>Condition</span>
-                                <span style={{ display: "flex", alignItems: "center", gap: ".5em" }}>{condition} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M229.5,113,166.07,90,143,26.5a16,16,0,0,0-30,0L90,89.93,26.5,113a16,16,0,0,0,0,30l63.43,23L113,229.5a16,16,0,0,0,30,0l23.07-63.44L229.5,143a16,16,0,0,0,0-30Zm-68.93,38a16,16,0,0,0-9.54,9.54L128,223.9l-23-63.33A16,16,0,0,0,95.43,151L32.1,128l63.33-23A16,16,0,0,0,105,95.43L128,32.1l23,63.33a16,16,0,0,0,9.54,9.54l63.33,23Z"></path></svg></span>
-                            </div>
-                            <div className="row">
-                                <span>Waterfront</span>
-                                <span>{waterfront === 1 ? ("Available") : ("Not Available")}</span>
-                            </div>
-                            <div className="row">
-                                <span>Year Built</span>
-                                <span>{built}</span>
-                            </div>
-                            <div className="row">
-                                <span>Year Renovated</span>
-                                <span>{renovate ? (`${renovate}`) : ("Not Renovated")}</span>
-                            </div>
-                            <div className="row">
-                                <span>SQFT Above</span>
-                                <span>{above}</span>
-                            </div>
-                            <div className="row">
-                                <span>SQFT Basement</span>
-                                <span>{base}</span>
-                            </div>
-                            <div className="row">
-                                <span>SQFT Lot</span>
-                                <span>{lot}</span>
-                            </div>
-                            <div className="row">
-                                <span>SQFT Living</span>
-                                <span>{living}</span>
-                            </div>
-                            <div className="row">
-                                <span>Rent</span>
-                                <span>${rent}</span>
-                            </div>
-                            <div className="row lastrow">
-                                <span>Price</span>
-                                <span>${price}</span>
-                            </div>
-                        </div>
-                        <div className="table tableAlt" style={{ borderRadius: "8px" }}>
-                            <h5 style={{ fontSize: "1.5em", textTransform: "uppercase", fontFamily: "pacifico", marginBottom: "2em" }}>Seller Details</h5>
-                            <div className="row">
-                                <span>Name</span>
-                                <span>{sellerName}</span>
-                            </div>
-                            <div className="row">
-                                <span>Email</span>
-                                <span>{mail}</span>
-                            </div>
-                            <div className="row lastrow">
-                                <span>Phone</span>
-                                <span>{phone}</span>
-                            </div>
-                            <button className="button">Contact Seller</button>
-                        </div>
+        <>
+            <div className="spContainer">
+                <Hero className="spHero border" img={image}>
+                    <Header />
+                    <div className="spTitle">
+                        <h6>{city}</h6>
+                        <h2>{name}</h2>
+                        <p>A Property Located in {city}, {state} in USA</p>
                     </div>
+                </Hero>
+                <div className="spContentAlt border">
+                    <div className="spImgBx">
+                        <img src={image} alt="" />
+                    </div>
+                    <div className="spTxtBxAlt">
+                        <div className="spTableAlt">
+                            <div className="table" style={{ borderRadius: "8px" }}>
+                                <h5 style={{ fontSize: "1.5em", textTransform: "uppercase", fontFamily: "pacifico", marginBottom: "2em" }}>Property Details</h5>
+                                <div className="row">
+                                    <span>Name</span>
+                                    <span>{name}</span>
+                                </div>
+                                <div className="row">
+                                    <span>City</span>
+                                    <span>{city}</span>
+                                </div>
+                                <div className="row">
+                                    <span>statezip</span>
+                                    <span>{state}</span>
+                                </div>
+                                <div className="row">
+                                    <span>floors</span>
+                                    <span>{floor}</span>
+                                </div>
+                                <div className="row">
+                                    <span>bedrooms</span>
+                                    <span>{bedroom}</span>
+                                </div>
+                                <div className="row">
+                                    <span>bathrooms</span>
+                                    <span>{bathroom}</span>
+                                </div>
+                                <div className="row">
+                                    <span>View</span>
+                                    <span style={{ display: "flex", alignItems: "center", gap: ".5em" }}>{view} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M229.5,113,166.07,90,143,26.5a16,16,0,0,0-30,0L90,89.93,26.5,113a16,16,0,0,0,0,30l63.43,23L113,229.5a16,16,0,0,0,30,0l23.07-63.44L229.5,143a16,16,0,0,0,0-30Zm-68.93,38a16,16,0,0,0-9.54,9.54L128,223.9l-23-63.33A16,16,0,0,0,95.43,151L32.1,128l63.33-23A16,16,0,0,0,105,95.43L128,32.1l23,63.33a16,16,0,0,0,9.54,9.54l63.33,23Z"></path></svg></span>
+                                </div>
+                                <div className="row">
+                                    <span>Condition</span>
+                                    <span style={{ display: "flex", alignItems: "center", gap: ".5em" }}>{condition} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M229.5,113,166.07,90,143,26.5a16,16,0,0,0-30,0L90,89.93,26.5,113a16,16,0,0,0,0,30l63.43,23L113,229.5a16,16,0,0,0,30,0l23.07-63.44L229.5,143a16,16,0,0,0,0-30Zm-68.93,38a16,16,0,0,0-9.54,9.54L128,223.9l-23-63.33A16,16,0,0,0,95.43,151L32.1,128l63.33-23A16,16,0,0,0,105,95.43L128,32.1l23,63.33a16,16,0,0,0,9.54,9.54l63.33,23Z"></path></svg></span>
+                                </div>
+                                <div className="row">
+                                    <span>Waterfront</span>
+                                    <span>{waterfront === 1 ? ("Available") : ("Not Available")}</span>
+                                </div>
+                                <div className="row">
+                                    <span>Year Built</span>
+                                    <span>{built}</span>
+                                </div>
+                                <div className="row">
+                                    <span>Year Renovated</span>
+                                    <span>{renovate ? (`${renovate}`) : ("Not Renovated")}</span>
+                                </div>
+                                <div className="row">
+                                    <span>SQFT Above</span>
+                                    <span>{above}</span>
+                                </div>
+                                <div className="row">
+                                    <span>SQFT Basement</span>
+                                    <span>{base}</span>
+                                </div>
+                                <div className="row">
+                                    <span>SQFT Lot</span>
+                                    <span>{lot}</span>
+                                </div>
+                                <div className="row">
+                                    <span>SQFT Living</span>
+                                    <span>{living}</span>
+                                </div>
+                                <div className="row">
+                                    <span>Rent</span>
+                                    <span>${rent}</span>
+                                </div>
+                                <div className="row lastrow">
+                                    <span>Price</span>
+                                    <span>${price}</span>
+                                </div>
+                            </div>
+                            <div className="table tableAlt" style={{ borderRadius: "8px" }}>
+                                <h5 style={{ fontSize: "1.5em", textTransform: "uppercase", fontFamily: "pacifico", marginBottom: "2em" }}>Seller Details</h5>
+                                <div className="row">
+                                    <span>Name</span>
+                                    <span>{sellerName}</span>
+                                </div>
+                                <div className="row">
+                                    <span>Email</span>
+                                    <span>{mail}</span>
+                                </div>
+                                <div className="row lastrow">
+                                    <span>Phone</span>
+                                    <span>{phone}</span>
+                                </div>
+                                <button className="button">Contact Seller</button>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
             <Footer />
-        </div>
+        </>
     );
 }
 
