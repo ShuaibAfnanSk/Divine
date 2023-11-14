@@ -765,7 +765,7 @@ textarea {
 /* -------------------------------------------------------------------------home--------------------------------------------------------------- */
 
 .hero {
-  background-image: url("https://images.unsplash.com/photo-1478186172078-2a70949993f0?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1506499984411-860f50ae4acb?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -791,7 +791,7 @@ textarea {
   text-transform: uppercase;
   font-size: 13em;
   text-align: center;
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.15);
   font-weight: 900;
 }
 
@@ -945,18 +945,109 @@ textarea {
 }
 
 .about {
-  background-image: url("https://images.unsplash.com/photo-1486108334972-f02b6c78ba07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1534237710431-e2fc698436d0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.aboutBtns {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
-  padding: 3em;
-  align-items: end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+.aboutBtns button {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.aboutSlider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.aboutDiv {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutCard {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 15px solid #fff;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.overlay img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cardTxt {
+  background-color: #fff;
+  color: #000;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.cardStamps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stampLeft h5 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.stampLeft h6 {
+  font-size: 1em;
+}
+
+.stampRight {
+  display: flex;
+  align-items: center;
+  gap: .5em;
 }
 
 .aboutAlt {
+  padding: 3em;
+  display: flex;
+  align-items: end;
   background-image: url("https://images.unsplash.com/photo-1423768164017-3f27c066407f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
@@ -1726,7 +1817,7 @@ textarea {
     padding: 0em;
   }
 
-  .about {
+  .aboutAlt {
     padding: 3em 1em;
   }
 
@@ -1799,6 +1890,14 @@ textarea {
 
   .formThree div input {
     width: 100%;
+  }
+
+  .aboutBtns {
+    padding: 1em;
+  }
+
+  .aboutCard {
+    width: 350px;
   }
 
 }
