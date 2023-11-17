@@ -44,9 +44,9 @@ const Properties = () => {
                     <div className="propertyWrapper border">
                         <Header />
                         <div className="title propertyTitle">
-                            <h6>Our Properties</h6>
+                            {/* <h6>Our Properties</h6>
                             <h3>Find Your Place</h3>
-                            <p>Here are all the properties listed in our website, Select the your new place.</p>
+                            <p>Here are all the properties listed in our website, Select the your new place.</p> */}
                         </div>
                     </div >
                     <div className="propertyBx border">
