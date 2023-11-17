@@ -43,9 +43,9 @@ const SellProperties = () => {
                     <div className="propertyWrapper sellPropertyWrapper border">
                         <Header />
                         <div className="title propertyTitle">
-                            <h6>Seller Properties</h6>
+                            {/* <h6>Seller Properties</h6>
                             <h3>Find Your Place</h3>
-                            <p>Here are all the properties uploaded by seller's on our platform.</p>
+                            <p>Here are all the properties uploaded by seller's on our platform.</p> */}
                         </div>
                     </div>
                     <div className="propertyBx border">
