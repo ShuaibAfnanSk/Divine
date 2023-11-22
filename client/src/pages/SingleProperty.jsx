@@ -121,7 +121,7 @@ const SingleProperty = () => {
                                 <span>Price</span>
                                 <span>${price}</span>
                             </div>
-                            <Link to={`/visit/${name}`} className="link"><button className="button">Plan a Visit</button></Link>
+                            <Link to={`/visit/${name}`} className="link"><button className="button" style={{backgroundColor:"#fff", color:"black"}}>Plan a Visit</button></Link>
                         </div>
                     </div>
                 </div>

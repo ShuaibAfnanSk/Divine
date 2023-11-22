@@ -167,7 +167,7 @@ const SingleSellProperty = () => {
                                 <span>Phone</span>
                                 <span>{phone}</span>
                             </div>
-                            <button className="button">Contact Seller</button>
+                            <button className="button" style={{backgroundColor:"#fff", color:"black"}}>Contact Seller</button>
                         </div>
                     </div>
 

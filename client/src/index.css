@@ -420,7 +420,7 @@ textarea:focus {
 }
 
 .table {
-  background-color: #000;
+  background-color: #222;
   border-radius: 2em;
   padding: 3em;
   width: fit-content;
@@ -432,7 +432,7 @@ textarea:focus {
 }
 
 .tableAlt {
-  background-color: #222;
+  background-color: #353535;
 }
 
 .row {
