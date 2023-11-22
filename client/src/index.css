@@ -420,7 +420,7 @@ textarea:focus {
 }
 
 .table {
-  background-color: #fff1e6;
+  background-color: #000;
   border-radius: 2em;
   padding: 3em;
   width: fit-content;
@@ -428,14 +428,15 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: #fff;
 }
 
 .tableAlt {
-  background-color: #faf5ef;
+  background-color: #222;
 }
 
 .row {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2em 0em;
   display: flex;
   justify-content: space-between;
@@ -450,7 +451,7 @@ textarea:focus {
 }
 
 .row span:nth-child(2) {
-  color: #555;
+  color: snow;
 }
 
 .lastrow {
