@@ -135,7 +135,7 @@ textarea:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 125vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -151,8 +151,9 @@ textarea:focus {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   color: #fff;
+  padding-bottom: 3em;
 }
 
 .propertyBx {
@@ -602,23 +603,23 @@ textarea:focus {
   background-image: url("https://images.unsplash.com/photo-1617761141732-d481912af1a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80");
   background-size: cover;
   background-position: center;
-  padding: 3em 5em;
-  display: flex;
-  flex-direction: column;
   gap: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 0em;
 }
 
 .sell {
   border-radius: 5em;
   width: 100%;
   min-height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1620205335153-09f784b65c05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80");
+  background-image: url("https://images.unsplash.com/photo-1554793000-245d3a3c2a51?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
-  padding: 3em 5em;
-  display: flex;
-  flex-direction: column;
+  padding: 5em;
   gap: 5em;
+  color: #fff;
 }
 
 .visit {
@@ -631,129 +632,138 @@ textarea:focus {
   gap: 5em;
 }
 
-.contactBx {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.contactLeft {
-  flex: 5;
+.sellForm form {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  padding: 3em;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 2em;
+  width: 750px;
+  border-radius: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.contactForm form {
+  width: 550px;
+}
+
+.sellTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.help {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+.sellTitle h3 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.sellTitle p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  width: fit-content;
+  padding-bottom: .5em;
+}
+
+.contactTitle p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.formStamp {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  width: 100%;
+}
+
+.formStamp div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .25em;
+}
+
+.formStamp div input {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.5em 0em;
+  font-size: 1.15em;
   color: #fff;
 }
 
-.contactLeft h3 {
-  font-size: 7em;
+.formStamp div input::placeholder {
+  color: #fff;
 }
 
-.contactLeft p {
-  font-size: 1.25em;
-  width: 500px;
-}
-
-.contactLeft h5 {
-  font-size: 2em;
-}
-
-.contactRight {
-  flex: 5;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.contactRight form {
-  background-color: #fff;
-  padding: 2em;
-  width: fit-content;
+.single {
   display: flex;
   flex-direction: column;
-  gap: .5em;
-  width: 500px;
-  border-radius: 1.5em;
+  gap: 0.25em;
+  width: 100%;
 }
 
-.sellRight {
-  flex: 5;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.sellRight form {
-  background-color: #fff;
-  padding: 2em;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: .75em;
-  width: 550px;
-  border-radius: 1.5em;
-}
-
-.sellRight form input {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1em;
+.single input {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.5em 0em;
   font-size: 1.15em;
-  border-radius: 1.5em;
+  color: #fff;
 }
 
-.sellRight form button {
-  margin-top: .5em;
+.singleAlt input {
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.contactRight form input,
-textarea {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  font-size: 1.15em;
-  border-radius: 1.5em;
+.singleAlt input::placeholder {
+  color: #000;
 }
 
-.contactRight form button {
-  margin-top: .5em;
+.single textarea {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.contactRight form label {
-  margin-left: 1em;
-  margin-top: .5em;
-}
-
-.sellRight form label {
-  margin-left: .5em;
-}
-
-.formTwo {
+.linkSvg {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
 }
 
-.formTwo div input {
-  width: 235px;
+.formButton {
+  background-color: #fff;
+  color: #000;
 }
 
-.formTwo div {
-  display: flex;
-  flex-direction: column;
-  gap: .5em;
+.helpBx {
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  padding: 2em;
+  width: 300px;
+  border-radius: 8px;
+  right: 40px;
+  top: 185px;
 }
 
-.formThree {
-  display: flex;
-  justify-content: space-between;
-}
-
-.formThree div {
-  display: flex;
-  flex-direction: column;
-  gap: .5em;
-}
-
-.formThree div input {
-  width: 150px;
+.helpBx h6 {
+  font-size: 1em;
 }
 
 /* -----------------------------------------------------------------sellProperties--------------------------------------------------------------- */
@@ -1615,22 +1625,6 @@ textarea {
     width: 400px;
   }
 
-  .contactLeft p {
-    width: unset;
-  }
-
-  .contactLeft h3 {
-    font-size: 3em;
-  }
-
-  .contactLeft h5 {
-    font-size: 1.5em;
-  }
-
-  .contact {
-    padding: 3em 2em;
-  }
-
   .sell {
     padding: 3em 2em;
   }
@@ -1639,13 +1633,10 @@ textarea {
     padding: 3em 3em;
   }
 
-  .contactBx {
-    gap: 2em;
-  }
-
   .footer {
     padding: 0em 0em 10em 0em;
   }
+
 }
 
 @media only screen and (max-width:1000px) {
@@ -1716,24 +1707,6 @@ textarea {
     font-size: 2em;
   }
 
-  .contactBx {
-    flex-direction: column;
-    align-items: start;
-    gap: 3em;
-  }
-
-  .contactLeft h3 {
-    font-size: 5em;
-  }
-
-  .contactLeft p {
-    width: 400px;
-  }
-
-  .contactLeft h5 {
-    font-size: 2em;
-  }
-
 }
 
 @media only screen and (max-width:850px) {
@@ -1798,6 +1771,10 @@ textarea {
 
   .dropdown {
     position: relative;
+  }
+
+  .sellForm form {
+    width: 500px;
   }
 
 }
@@ -1953,33 +1930,21 @@ textarea {
     padding: 5em 1em;
   }
 
-  .sellRight form {
-    width: 350px;
-    padding: 2em 1em;
-  }
-
-  .formTwo {
-    gap: 1em;
-  }
-
-  .formThree {
-    gap: 1em;
-  }
-
-  .formTwo div input {
-    width: 100%;
-  }
-
-  .formThree div input {
-    width: 100%;
-  }
-
   .aboutBtns {
     padding: 1em;
   }
 
   .aboutCard {
     width: 350px;
+  }
+
+  .contactForm form {
+    width: 375px;
+    padding: 3em 2em;
+  }
+
+  .sellTitle h3 {
+    font-size: 2em;
   }
 
 }
@@ -2044,33 +2009,20 @@ textarea {
     width: 100%;
   }
 
-  .contactRight form {
-    width: 350px;
-    padding: 2em 1em;
-  }
-
-  .contactLeft h3 {
-    font-size: 5em;
-  }
-
-  .contactLeft p {
-    width: 350px;
-  }
-
-  .contactLeft h5 {
-    font-size: 1.5em;
-  }
-
-  .contact {
-    padding: 3em 1em;
-  }
-
   .sell {
-    padding: 3em 1em;
+    padding: 5em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .visit {
     padding: 3em 1em;
+  }
+
+  .sellForm form {
+    width: 375px;
+    padding: 3em 2em;
   }
 
 }

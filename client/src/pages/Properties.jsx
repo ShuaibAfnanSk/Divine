@@ -43,10 +43,7 @@ const Properties = () => {
                 <section className="wrapper">
                     <div className="propertyWrapper border">
                         <Header />
-                        <div className="title propertyTitle">
-                            {/* <h6>Our Properties</h6>
-                            <h3>Find Your Place</h3>
-                            <p>Here are all the properties listed in our website, Select the your new place.</p> */}
+                        <div className="propertyTitle">
                         </div>
                     </div >
                     <div className="propertyBx border">
