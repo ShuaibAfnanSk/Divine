@@ -68,6 +68,9 @@ const Header = () => {
                                     <span className="nav">
                                         <Link to={`/sellProperties`} className="link">Seller Properties</Link>
                                     </span>
+                                    <span>
+                                        <a href="https://divine-alchemy-predictor.streamlit.app/" className="link">Predict</a>
+                                    </span>
                                 </div>
                             </Dropdown>
                         )}
