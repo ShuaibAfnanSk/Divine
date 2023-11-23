@@ -60,8 +60,8 @@ const Visit = () => {
         <VisitImg className="contact" img={image}>
             <div className="sellForm contactForm">
                 <form onSubmit={handleSubmit}>
-                    <Link to={'/'} className="link linkSvg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>Back to Home</Link>
-                    <div className="sellTitle">
+                    <Link to={'/'} className="link linkSvg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>Back to Home</Link>
+                    <div className="sellTitle contactTitle">
                         <div className="sellTxt">
                             <h3>Visit</h3>
                             <p>Plan your visit.</p>
@@ -74,24 +74,24 @@ const Visit = () => {
                         </div>) : null}
 
                     </div>
-                    <div className="single">
+                    <div className="single singleAlt">
                         <label htmlFor="name">Full Name</label>
                         <input type="text" name="fullName" placeholder={user ? user.username : "john doe"} onChange={(e) => setFullName(e.target.value)} />
                     </div>
-                    <div className="single">
+                    <div className="single singleAlt">
 
                         <label htmlFor="email">Email</label>
                         <input type="email" name="email" id="" placeholder="example@email.com" onChange={(e) => setEmail(e.target.value)} />
                     </div>
-                    <div className="single">
+                    <div className="single singleAlt">
                         <label htmlFor="email">Phone</label>
                         <input type="text" name="phone" id="" placeholder="+49 176 123 456 79" onChange={(e) => setPhone(e.target.value)} />
                     </div>
-                    <div>
+                    <div className="single">
                         <label htmlFor="email">Date</label>
                         <input type="date" name="date" onChange={(e) => setDate(e.target.value)} id="" />
                     </div>
-                    <button className="button formButton" type="submit">Submit</button>
+                    <button className="button" type="submit">Submit</button>
                 </form>
             </div>
 
