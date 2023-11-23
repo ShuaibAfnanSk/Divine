@@ -23,6 +23,7 @@ const Visit = () => {
     const [phone, setPhone] = useState();
     const [date, setDate] = useState();
     const [image, setImage] = useState();
+    const [show, setShow] = useState(false);
     axios.defaults.withCredentials = true;
 
     useEffect(() => {
