@@ -555,7 +555,8 @@ textarea:focus {
 
 .headerNavs {
   display: flex;
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
   padding: 1.5em .5em;
   border-radius: 3em;
   position: relative;
